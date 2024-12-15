@@ -122,13 +122,13 @@
                 <span class="menu-header-text">Setting</span>
             </li>
             <li class="menu-item">
-                <a href="/setting/user" class="menu-link">
+                <a href="/settings/user" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div data-i18n="Manajemen User">Manajemen User</div>
                 </a>
             </li>
             <li class="menu-item">
-                <a href="/setting/level" class="menu-link">
+                <a href="/settings/level" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user-check"></i>
                 <div data-i18n="Level User">Level User</div>
                 </a>
