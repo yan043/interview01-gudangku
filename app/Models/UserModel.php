@@ -4,9 +4,7 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-date_default_timezone_set("Asia/Makassar");
-
-class User extends Authenticatable
+class UserModel extends Authenticatable
 {
     protected $table = 'tb_employee';
 
@@ -14,6 +12,7 @@ class User extends Authenticatable
         'full_name',
         'nik',
         'password',
+        'level_id',
     ];
 
     protected $hidden = [
@@ -29,5 +28,10 @@ class User extends Authenticatable
     public function getAuthIdentifierName()
     {
         return 'nik';
+    }
+
+    public function level()
+    {
+        return $this->belongsTo(LevelModel::class, 'level_id');
     }
 }

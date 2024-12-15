@@ -15,8 +15,6 @@ class HomeController extends Controller
             return redirect()->route('login')->withErrors(['login' => 'Harap login terlebih dahulu.']);
         }
 
-        $session = Session::all();
-
-        return view('home', compact('session'));
+        return view('home');
     }
 }
